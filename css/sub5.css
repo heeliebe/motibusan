@@ -1,0 +1,566 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Paperlogy';
+    line-height: 1.5;
+    color: #333;
+    min-width: 1320px;
+    font-size: 16px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.icon {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+/* 헤더 */
+header {
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+    width: 100%;
+    box-sizing: border-box;
+    margin: auto;
+    height: 120px;
+    justify-content: space-between;
+    min-width: 1320px;
+    position: relative;
+    z-index: 1000;
+    max-width: 1920px;
+}
+
+/* 내비 */
+.nav {
+    width: 758px;
+    height: 40px;
+    display: flex;
+    /* margin: auto; */
+    margin-left: 5%;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.nav>li>a {
+    display: block;
+    font-weight: 600;
+    font-size: 17px;
+    transition: all 0.7s;
+    padding: 25px;
+}
+
+.nav>li {
+    position: relative;
+    z-index: 999;
+}
+
+.nav>li:hover>a {
+    color: #fff;
+}
+
+.nav>.on>a,
+.nav>.nav_on>a {
+    color: #fff;
+}
+
+.nav .bar {
+    position: absolute;
+    left: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 140px;
+    height: 35px;
+    background: #279D66;
+    opacity: 0;
+    transition: all 0.6s;
+    z-index: 1;
+}
+
+/* bar 애니메이션 */
+.nav li:nth-child(1).on~.bar,
+.nav li:nth-child(1).nav_on~.bar {
+    left: 12px;
+    opacity: 1;
+}
+
+.nav li:nth-child(2).on~.bar,
+.nav li:nth-child(2).nav_on~.bar {
+    left: 165px;
+    opacity: 1;
+}
+
+.nav li:nth-child(3).on~.bar,
+.nav li:nth-child(3).nav_on~.bar {
+    left: 313px;
+    opacity: 1;
+}
+
+.nav li:nth-child(4).on~.bar,
+.nav li:nth-child(4).nav_on~.bar {
+    left: 452px;
+    opacity: 1;
+}
+
+.nav li:nth-child(5).on~.bar,
+.nav li:nth-child(5).nav_on~.bar {
+    left: 586px;
+    opacity: 1;
+}
+
+/* 서브메뉴 */
+.sub {
+    width: 170px;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    visibility: hidden;
+    width: 170px;
+    position: absolute;
+    opacity: 0;
+    left: -100px;
+    transform: translateX(-50%);
+    transition: 0.6s;
+    padding: 10px 0;
+    z-index: 500;
+}
+
+.sub a {
+    display: block;
+    padding: 10px;
+}
+
+/* 서브메뉴 호버 꾸미기 */
+.sub a:hover {
+    color: #28BEF1;
+}
+
+.sub li span {
+    position: relative;
+}
+
+.sub li span::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 3px;
+    background-color: #28BEF1;
+    position: absolute;
+    left: -25%;
+    bottom: 10%;
+    transform: scaleX(0);
+    transition: 0.3s;
+    transform-origin: left;
+}
+
+.sub li span:hover::after {
+    transform: scaleX(1);
+}
+
+/* 서브메뉴 나타나게 */
+.nav li.on .sub {
+    visibility: visible;
+    opacity: 1;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mainlogo,
+.search img,
+.login {
+    display: block;
+}
+
+.search-text {
+    width: 20%;
+    height: 40px;
+    border: 2px solid #999;
+    border-radius: 50px;
+    position: relative;
+    padding-left: 50px;
+    background: url(../images/icon-search.png) no-repeat 5% center;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-text:focus {
+    border-color: #555;
+}
+
+.search img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5%;
+}
+
+/* 스크롤바 커스텀 */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    transition: 0.5s;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #aaa;
+    border-radius: 12px 12px 12px 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #666;
+}
+
+/* 배너 */
+.sub_bn {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background: url(../images/sub5/banner4.png) no-repeat center top/cover;
+}
+
+.bn_in {
+    width: 1320px;
+    margin: auto;
+    color: #fff;
+    padding-top: 180px;
+}
+
+.bn_in h1 {
+    font-size: 42px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 32px;
+}
+
+h6 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.green {
+    color: #279D66;
+}
+
+p {
+    font-family: 'Pretendard';
+}
+
+/* 내용 - 갈맷길이란 */
+.contents {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.contents_in {
+    width: 1320px;
+    margin: auto;
+    margin-top: 200px;
+}
+
+.contents p {
+    margin-top: 50px;
+}
+
+/* 타이틀 하이라이트 */
+.highlight {
+    background: url(../images/sub5/titlebg.png) -362px 100% no-repeat;
+    transition: all 2s;
+}
+
+.aos-animate .title_on {
+    background-position-x: 0;
+}
+
+.about_1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about_1 img {
+    filter: drop-shadow(-20px 20px 0 #279D66);
+}
+
+.box_text {
+    width: 530px;
+}
+
+/* 배경 */
+.contents_bg>img {
+    position: absolute;
+    mix-blend-mode: color-burn;
+    z-index: -1;
+}
+
+.contents_bg {
+    width: 100%;
+    position: absolute;
+    top: 645px;
+}
+
+.gallery-bg {
+    opacity: 0.8;
+}
+
+.gallery-bgdeco1 {
+    top: 90px;
+    left: 465px;
+    animation: fireworks_ani 2s linear alternate infinite;
+}
+
+.gallery-bgdeco2 {
+    top: 30px;
+    left: 45px;
+    animation: fireworks_ani 1s linear alternate infinite;
+}
+
+.gallery-bgdeco3 {
+    top: 80px;
+    left: 680px;
+    animation: fireworks_ani 1.5s linear alternate infinite;
+}
+
+@keyframes fireworks_ani {
+    0% {transform: translateY(0);}
+    100% {transform: translateY(20%);}
+}
+
+/* 내용 - 바다와 강, 산과 온천이 만나는 길 */
+.about_2 {
+    margin-top: 450px;
+    text-align: center;
+}
+
+.about_2 ul,
+.about_3 ul {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about_2 ul li {
+    width: 326px;
+    height: 270px;
+    background-color: #F5F6F6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about_2 ul li img {
+    padding-top: 40px;
+    width: 150px;
+    height: 150px;
+}
+
+.about_2 h4 {
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+/* 내용 - CI 소개 */
+.about_3 {
+    margin-top: 150px;
+    text-align: center;
+}
+
+.about_3 ul li {
+    width: 655px;
+    height: 270px;
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 30px;
+    box-sizing: border-box;
+    color: #999;
+}
+
+.slogan {
+    margin-left: 60px;
+}
+
+.about_3 ul li>div {
+    margin-top: 40px;
+    box-sizing: border-box;
+}
+
+.about_3 ul li:nth-child(1)>div {
+    text-align: center;
+}
+
+.about_3 ul li:nth-child(2)>div {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+/* 모티 소식 */
+.contents_news {
+    width: 100%;
+    position: relative;
+    margin-top: 150px;
+}
+
+.contents_news::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: #ECF7F6;
+    z-index: -1;
+    width: 30%;
+    height: 100%;
+}
+
+.news_in {
+    width: 1320px;
+    height: 500px;
+    margin: auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.news_left {
+    position: absolute;
+    left: 0;
+    top: 100px;
+}
+
+.news_left h6,
+.news_left p {
+    color: #96A19D;
+}
+
+.news_left h2 {
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.news_left p {
+    margin-top: 30px;
+}
+
+.news_right {
+    position: relative;
+    width: calc(100% - 300px);
+    height: 500px;
+    box-sizing: border-box;
+    padding-top: 100px;
+    margin-left: 400px;
+    background: #fff;
+}
+
+.news_right h3 {
+    font-weight: 500;
+    width: 250px;
+    height: 90px;
+}
+
+.news_right p {
+    font-family: 'Pretendard';
+    margin-top: 50px;
+    color: #666;
+    width: 250px;
+}
+
+.news_tab a {
+    display: block;
+}
+
+.news_tab {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news_tab h3 {
+    transition: 0.3s;
+}
+
+.news_tab a:hover h3 {
+    text-decoration: underline;
+    color: #279D66;
+}
+
+.news_tab a:hover p {
+    color: #333;
+}
+
+.gray {
+    color: #CCCFD4;
+}
+
+/* 푸터 */
+.footer_top {
+    border-top: 1px solid #ddd;
+    background: #fff;
+    height: 90px;
+}
+
+.footer_top_in {
+    width: 1320px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.footer_bottom {
+    background-color: #666;
+    height: 210px;
+}
+
+.footer_bottom_in {
+    width: 1320px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.8;
+    padding-top: 30px;
+    overflow: hidden;
+}
+
+.phone {
+    display: flex;
+    gap: 20px;
+}
+
+.footer_bottom_in ul {
+    display: flex;
+    gap: 60px;
+}
+
+.footer_bottom_in ul a {
+    color: #ddd;
+}
+
+.footer_bottom_in ul a:hover {
+    color: #fff;
+}
+
+.footer_bottom_in>p {
+    width: 100%;
+}

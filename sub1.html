@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1400">
+    <title>모티부산 : 부산을 걷다, 부산을 잇다</title>
+    <!-- fabicon -->
+    <link href="./images/fabicon.png" rel="icon" type="image/png" sizes="32x32">
+
+    <!-- font -->
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/sub1.css">
+</head>
+
+<body>
+    <!-- 헤더 -->
+    <header data-aos="fade-down">
+        <a href="./index.html"><img src="./images/logo.png" alt="모티부산 로고" class="mainlogo"></a>
+        <!-- 내비 -->
+        <ul class="nav">
+            <li class="nav_on"><a href="./sub1.html" class="currentpage">갈맷길 코스 안내</a>
+            </li>
+            <li><a href="./sub2.html">모티 여행 준비</a>
+                <ul class="sub">
+                    <li><span><a href="./sub2.html">여행 준비</a></span></li>
+                    <li><span><a href="./sub2-2.html">도보 인증제</a></span></li>
+                </ul>
+            </li>
+            <li><a href="./sub3.html">모티 함께 걷기</a>
+                <ul class="sub">
+                    <li><span><a href="./sub3.html">프로그램 소개</a></span></li>
+                    <li><span><a href="./sub3.html">모티 여행 후기</a></span></li>
+                    <li><span><a href="./sub3.html">공지사항</a></span></li>
+                </ul>
+            </li>
+            <li><a href="./sub4.html">모티 스토어</a></li>
+            <li><a href="./sub5.html">갈맷길 스토리</a>
+                <ul class="sub">
+                    <li><span><a href="./sub5.html">갈맷길이란?</a></span></li>
+                </ul>
+            </li>
+            <li class="bar"></li>
+        </ul>
+        <input type="text" class="search-text">
+        <a href="#"><img src="./images/icon-login.png" alt="로그인" class="login"></a>
+    </header>
+
+    <!-- 지도 -->
+    <div class="map_bg">
+        <div class="sub_map">
+            <img src="./images/sub1/sub-map.png" alt="갈맷길 3-3코스 지도" class="map" data-aos="fade-right">
+            <div class="map_in">
+                <div class="map_text" data-aos="fade-left">
+                    <h5>갈맷길 코스 안내</h5>
+                    <h3>3-3 코스</h3>
+                    <div>
+                        <div class="text_box">
+                            <p class="green">절영해안산책로 관리센터　▶　아미르공원</p>
+                            <p>해안가로 길을 재촉하면 해안을 깎아 세운 듯한 절벽과 기암괴석으로 이루어져 있어 굽이치는 파도와 더불어 절경을 이루는 절영해안산책로와 태종대가 있다.
+                                절영해안산책로를
+                                따라 걸으면 남항대교를 배경으로 바다를 가득 메우고 있는 각종 선박, 그리고 기암절벽의 절경이 어우러져 해양 수도 부산만의 독특한 풍광을 자랑한다. 또한
+                                절영해안산책로 위로도 해안로 따라 데크길이 이어져 어린자녀와 손을 잡고 걷기도 좋다. 모자이크벽화 타일, 피아노계단, 출렁다리, 대마도 전망대 등 아기자기한
+                                볼거리가
+                                지역의 명물로 자리 잡고 있으며, 맑은 날이면, 대마도를 볼 수 있는 전망대 등이 있어 지역 주민들과 많은 도보 여행가들의 사랑을 받고 있다.</p>
+                            <p class="green"><span>코스 난이도</span><img src="./images/index/star_on.png" alt="별"><img
+                                    src="./images/index/star_on.png" alt="별"><img src="./images/index/star_off.png"
+                                    alt="별">
+                            </p>
+                        </div>
+                        <h4>거리　<b>14.9 km</b>　│　소요 시간　<b>약 5시간</b></h4>
+                    </div>
+                </div>
+                <img src="./images/sub1/map-road.png"
+                    alt="출발점 절영해안산책로 관리센터, 75광장까지 2.3km 약 45분, 75광장에서 감지해변까지 0.8km 약 20분, 감지해변에서 태종대입구까지 2.3km 약 40분, 태종대입구에서 태종대전망대까지 1.3km 약 30분, 태종대전망대에서 국립해양박물관까지 7.2km 약 150분, 국립해양박물관에서 아미르공원 입구까지 1.0km 약 20분"
+                    class="roadmap" data-aos="fade-up">
+            </div>
+        </div>
+    </div>
+
+    <!-- 도보인증대 위치 -->
+    <div class="contents_table">
+        <h2 data-aos="fade-right">도보인증대 위치 <img src="./images/icon_pin.png" alt="아이콘" class="icon"></h2>
+        <table data-aos="fade-left">
+            <tr>
+                <th>시작</th>
+                <td>절영해안산책로 관리센터</td>
+                <td>부산광역시 영도구 영선동4가 186-47</td>
+                <td><a href="#" class="icon_kakao"><img src="./images/sub1/icon_kakao.png" alt="카카오맵 연결"></a><a
+                        href="#"><img src="./images/sub1/icon_naver.png" alt="카카오맵 연결"></a></td>
+            </tr>
+            <tr>
+                <th>중간</th>
+                <td>태종대 전망대</td>
+                <td>부산광역시 영도구 전망로 209</td>
+                <td><a href="#" class="icon_kakao"><img src="./images/sub1/icon_kakao.png" alt="카카오맵 연결"></a><a
+                        href="#"><img src="./images/sub1/icon_naver.png" alt="카카오맵 연결"></a></td>
+            </tr>
+            <tr>
+                <th>종점</th>
+                <td>아미르공원</td>
+                <td>부산광역시 영도구 동삼동 1165</td>
+                <td><a href="#" class="icon_kakao"><img src="./images/sub1/icon_kakao.png" alt="카카오맵 연결"></a><a
+                        href="#"><img src="./images/sub1/icon_naver.png" alt="카카오맵 연결"></a></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- 주변 관광지 -->
+    <div class="contents_place">
+        <h2 data-aos="fade-right">주변 관광지 <img src="./images/icon_map.png" alt="아이콘" class="icon"></h2>
+        <div class="swiper mySwiper place_slide">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="place_box">
+                        <div class="box_img">
+                            <img src="./images/sub1/place1.png" alt="흰여울문화마을">
+                        </div>
+                        <div class="box_text">
+                            <h1>흰여울문화마을</h1>
+                            <p>해안가의 문화예술마을로<br>
+                                오션뷰 카페, 포토존으로 유명하다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="place_box">
+                        <div class="box_img">
+                            <img src="./images/sub1/place2.png" alt="절영해안산책로">
+                        </div>
+                        <div class="box_text">
+                            <h1>절영해안산책로</h1>
+                            <p>굽이치는 파도를 따라 걸으며<br>
+                                여유를 느낄 수 있는 산책로</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="place_box">
+                        <div class="box_img">
+                            <img src="./images/sub1/place3.png" alt="흰여울 해안터널">
+                        </div>
+                        <div class="box_text">
+                            <h1>흰여울 해안터널</h1>
+                            <p>색색의 조명과 화려한 포토존이<br>
+                                가득한 약 70m의 해안터널</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="place_box">
+                        <div class="box_img">
+                            <img src="./images/sub1/place4.png" alt="태종대">
+                        </div>
+                        <div class="box_text">
+                            <h1>태종대</h1>
+                            <p>해안가의 문화예술마을로<br>
+                                오션뷰 카페, 포토존으로 유명하다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="place_box">
+                        <div class="box_img">
+                            <img src="./images/sub1/place5.png" alt="아미르공원">
+                        </div>
+                        <div class="box_text">
+                            <h1>아미르공원</h1>
+                            <p>해안가의 문화예술마을로<br>
+                                오션뷰 카페, 포토존으로 유명하다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="place_box">
+                        <div class="box_img">
+                            <img src="./images/sub1/place6.png" alt="국립해양박물관">
+                        </div>
+                        <div class="box_text">
+                            <h1>국립해양박물관</h1>
+                            <p>해안가의 문화예술마을로<br>
+                                오션뷰 카페, 포토존으로 유명하다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </div>
+
+    <!-- 모티 갤러리 -->
+    <div class="contents_gallery">
+        <div class="gallery_in">
+            <h1>모티 갤러리</h1>
+            <div class="swiper gallerySlide" data-aos="fade-up">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/sub1/gallery1.png" alt="절영해안산책로">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/sub1/gallery2.png" alt="절영해안산책로 야경">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/sub1/gallery3.png" alt="아미르공원">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/sub1/gallery4.png" alt="국립해양박물관">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/sub1/gallery5.png" alt="아치섬">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/sub1/gallery6.png" alt="흰여울문화마을">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/sub1/gallery7.png" alt="태종대">
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="filter"></div>
+        <div thumbsSlider="" class="swiper galleryBg">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./images/sub1/gallery1.png" alt="절영해안산책로">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/sub1/gallery2.png" alt="절영해안산책로 야경">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/sub1/gallery3.png" alt="아미르공원">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/sub1/gallery4.png" alt="국립해양박물관">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/sub1/gallery5.png" alt="아치섬">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/sub1/gallery6.png" alt="흰여울문화마을">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/sub1/gallery7.png" alt="태종대">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 모티 후기 -->
+    <div class="contents_review">
+        <div class="review_in">
+            <div class="review_left" data-aos="fade-right">
+                <h6>COMMUNITY</h6>
+                <h2>모티 후기 <img src="./images/icon_walking.png" alt="아이콘" class="icon"></h2>
+                <p>갈맷길 3-3 코스를 걸어본<br>
+                    여행객들의 생생한 후기를<br>
+                    들려드려요.</p>
+            </div>
+            <div class="review_right" data-aos="fade-right">
+                <div class="review_box">
+                    <div class="profile_box">
+                        <img src="./images/sub1/profile-3.png" alt="프로필1">
+                        <h4>도치162</h4>
+                    </div>
+                    <p>부산 걷기 좋은 곳이 참 많아요<br>
+                        바다뷰 보면서 걸으면 참 좋고 대신 날씨가 더울 때는 조심해 주세요<br>
+                        걷다가 지치더라고요</p>
+                    <h6>2024-11-30 22:30:26</h6>
+                </div>
+                <div class="review_box">
+                    <div class="profile_box">
+                        <img src="./images/sub1/profile-2.png" alt="프로필">
+                        <h4>바다로가자</h4>
+                    </div>
+                    <p>SNS에서 너무 핫해서 궁금했던 곳! 지난달에 부산가서 바다를 보며 걸었는데요,<br>
+                        정말 좋더라구요. 산책로도 넓직하고 바다를 코 앞에서 느낄 수 있어 행복했습니다.<br>
+                        거기다 위에 흰여울 문화마을과 연결되어 소품샵도 구경하고 커피도 한잔하고..<br>
+                        몇년만에 다녀온 부산여행이었는데 만족도 200%!!!</p>
+                    <h6>2024-11-30 22:30:26</h6>
+                </div>
+                <div class="review_box">
+                    <div class="profile_box">
+                        <img src="./images/sub1/profile-1.png" alt="프로필">
+                        <h4>카페탐방</h4>
+                    </div>
+                    <p>부산은 해수욕장으로도 유명하지만 절영해안산책로와 같이 걸으면서
+                        바다와 어우러지는 풍경을 마주하는 산책로가 있어 더 친근하게
+                        느껴지는 것 같아요. 걷다 보면 저절로 운동도 되고 자주는 아니더라도
+                        해녀가 물질하는 모습도 마주치며 부산 바다의 참맛을 느끼게 됩니다.
+                        똑같은 길이지만 걷다 보면 완전히 달라보이는 풍경에 와~ 소리가 절로
+                        나오는 절영해안산책로! 이번 겨울여행지로 모두 어떠세요?</p>
+                    <h6>2024-11-30 22:30:26</h6>
+                </div>
+                <div class="review_box">
+                    <div class="profile_box">
+                        <img src="./images/sub1/profile-4.png" alt="프로필">
+                        <h4>걸어서떠나요</h4>
+                    </div>
+                    <p>제가 사계절 바다 중 겨울 바다를 가장 좋아하는데 태종대를 끼고있는 부산 영도구의 명소인 절영해안산책로는 기암절벽의 절경과 낭만적인 분위기를 느낄 수 있는 곳이라서 바다를
+                        옆에 두고 천천히 걷다보면 겨울바다의 매력을 한층 더 느낄 수 있을 것 같고 또 부대시설로 낚시터, 건강길, 쉼터, 해녀촌등이 있어서 볼거리와 먹거리를 모두 즐기면서
+                        오랬동안 기억에 남을 만한 멋진 겨울여행을 할 수 있을 것 같아요^^</p>
+                    <h6>2024-11-30 22:30:26</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 푸터 -->
+    <div class="footer_top">
+        <div class="footer_top_in">
+            <a href="#"><img src="./images/logo-busan.png" alt="부산광역시"></a>
+            <a href="#"><img src="./images/logo-busan2.png" alt="부산관광공사"></a>
+            <a href="#"><img src="./images/logo-busan3.png" alt="부산관광브랜드"></a>
+        </div>
+    </div>
+    <div class="footer_bottom">
+        <div class="footer_bottom_in">
+            <div class="phone" data-aos="fade-right">
+                <h1>1588-2024</h1>
+                <p>문의전화<br>평일 09 : 00 - 18 : 00</p>
+            </div>
+            <ul data-aos="fade-down">
+                <li><a href="#">개인정보취급방침</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">사이트맵</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="./index.html"><img src="./images/logo-white.png" alt="모티부산 로고"></a></li>
+            </ul>
+            <p data-aos="fade-right" data-aos-offset="-10">
+                부산광역시 연제구 중앙대로 1001 부산광역시청 │ motics@moti.ko<br>
+                © Copyright by motibusan. ALL RIGHTS RESERVED.
+            </p>
+        </div>
+    </div>
+
+
+    <!-- JS library -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- AOS js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- my JS -->
+    <script src="./script/sub1.js"></script>
+</body>
+
+</html>
