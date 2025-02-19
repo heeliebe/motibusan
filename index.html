@@ -1,0 +1,1402 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1400">
+    <title>모티부산 : 부산을 걷다, 부산을 잇다</title>
+    <!-- fabicon -->
+    <link href="./images/fabicon.png" rel="icon" type="image/png" sizes="32x32">
+
+    <!-- font -->
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Simply Scroll CSS-->
+    <link rel="stylesheet" href="./css/jquery.simplyscroll.css">
+
+    <!-- aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <!-- 헤더 -->
+    <header data-aos="fade-down">
+        <a href="./index.html"><img src="./images/logo.png" alt="모티부산 로고" class="mainlogo"></a>
+        <!-- 내비 -->
+        <ul class="nav">
+            <li><a href="./sub1.html">갈맷길 코스 안내</a>
+            </li>
+            <li><a href="./sub2.html">모티 여행 준비</a>
+                <ul class="sub">
+                    <li><span><a href="./sub2.html">여행 준비</a></span></li>
+                    <li><span><a href="./sub2-2.html">도보 인증제</a></span></li>
+                </ul>
+            </li>
+            <li><a href="./sub3.html">모티 함께 걷기</a>
+                <ul class="sub">
+                    <li><span><a href="./sub3.html">프로그램 소개</a></span></li>
+                    <li><span><a href="./sub3.html">모티 여행 후기</a></span></li>
+                    <li><span><a href="./sub3.html">공지사항</a></span></li>
+                </ul>
+            </li>
+            <li><a href="./sub4.html">모티 스토어</a></li>
+            <li><a href="./sub5.html">갈맷길 스토리</a>
+                <ul class="sub">
+                    <li><span><a href="./sub5.html">갈맷길이란?</a></span></li>
+                </ul>
+            </li>
+            <li class="bar"></li>
+        </ul>
+        <input type="text" class="search-text">
+        <a href="#"><img src="./images/icon-login.png" alt="로그인" class="login"></a>
+    </header>
+
+    <!-- 배너 -->
+    <div class="main_bn">
+        <div class="bn_left">
+            <p class="text_vertical">부산을 <span class="text_green">걷다</span>, 부산을 <span class="text_blue">잇다</span></p>
+        </div>
+        <div class="bn_img swiper-container slide" thumbsSlider="" data-aos="fade-right">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./images/index/mainbanner1.png" alt="갈맷길 3-3코스 사진">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/index/mainbanner2.png" alt="갈맷길 2-2코스 오륙도 사진">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/index/mainbanner3.png" alt="갈맷길 4-3코스 다대포해수욕장">
+                </div>
+            </div>
+        </div>
+        <!-- 지도 -->
+        <div>
+            <div class="minimap swiper-container slide" data-aos="fade-left">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/index/main_map1.png" alt="갈맷길 3-3코스 지도">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/index/main_map2.png" alt="갈맷길 2-2코스 지도">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/index/main_map3.png" alt="갈맷길 4-3코스 지도">
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="map_panel" data-aos="fade-left" data-aos-offset="100"><img
+                    src="./images/index/main_map_panel.png" alt="코스 바로가기"></a>
+        </div>
+        
+        <!-- 우측 텍스트 -->
+        <div class="bn_right">
+            <div class="text swiper-container slide" data-aos="fade-left">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <h1>
+                            색다른<br>
+                            부산 바다를 만나다<br>
+                            절영해안산책로
+                        </h1>
+                        <p>
+                            <b>갈맷길 3-3코스</b><br>
+                            영도 절영해안산책로 관리센터 〉〉〉 아미르공원
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <h1>
+                            유채꽃<br>
+                            향기 가득한<br>
+                            오륙도의 봄
+                        </h1>
+                        <p>
+                            <b>갈맷길 2-2코스</b><br>
+                            민락교 〉〉〉 오륙도 진입데크
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <h1>
+                            부산에서<br>
+                            가장 아름다운 일몰<br>
+                            다대포해수욕장
+                        </h1>
+                        <p>
+                            <b>갈맷길 4-3코스</b><br>
+                            몰운대 〉〉〉 낙동강하굿둑
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 날씨 -->
+    <div class="weather">
+        <h2>갈맷길 기상정보</h2>
+        <div class="weather_in">
+            <div class="swiper-container slide2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="weather_box">
+                            <p><b>1코스</b><br>기장군</p>
+                            <img src="./images/index/weather-sun.png" alt="맑음">
+                            <h1>10.1℃</h1>
+                            <p>습도 45%<br>바람 북서 2.6m/s<br>시간 강수량 -mm</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="weather_box">
+                            <p><b>1코스</b><br>기장군</p>
+                            <img src="./images/index/weather-sun.png" alt="맑음">
+                            <h1>10.1℃</h1>
+                            <p>습도 45%<br>바람 북서 2.6m/s<br>시간 강수량 -mm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-container slide2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="weather_box border">
+                            <p><b>1코스</b><br>해운대구</p>
+                            <img src="./images/index/weather-cloud.png" alt="흐림">
+                            <h1>10.1℃</h1>
+                            <p>습도 45%<br>바람 북서 2.6m/s<br>시간 강수량 -mm</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="weather_box border">
+                            <p><b>1코스</b><br>해운대구</p>
+                            <img src="./images/index/weather-cloud.png" alt="흐림">
+                            <h1>10.1℃</h1>
+                            <p>습도 45%<br>바람 북서 2.6m/s<br>시간 강수량 -mm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-container slide2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="weather_box">
+                            <p><b>2코스</b><br>수영구</p>
+                            <img src="./images/index/weather-suncloud.png" alt="맑음">
+                            <h1>10.1℃</h1>
+                            <p>습도 45%<br>바람 북서 2.6m/s<br>시간 강수량 -mm</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="weather_box">
+                            <p><b>1코스</b><br>해운대구</p>
+                            <img src="./images/index/weather-cloud.png" alt="흐림">
+                            <h1>10.1℃</h1>
+                            <p>습도 45%<br>바람 북서 2.6m/s<br>시간 강수량 -mm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 큰 지도 -->
+    <div class="contents_map">
+        <div class="map_area" data-aos="fade-down">
+            <div class="map_title">
+                <h1>지도로<br>알아보는<br>갈맷길</h1>
+                <p>지도에서 원하는 길을 선택해보세요.</p>
+            </div>
+            <div class="map">
+                <img src="./images/index/map-deco1.png" alt="장식1" class="deco1 map-deco">
+                <img src="./images/index/map-deco2.png" alt="장식2" class="deco2 map-deco">
+                <img src="./images/index/map-deco3.png" alt="장식3" class="deco3 map-deco">
+                <img src="./images/index/map-deco4.png" alt="장식4" class="deco4 map-deco">
+
+                <img src="./images/index/map-all.png" alt="갈맷길 전체 코스" class="map-road-on active">
+                <img src="./images/index/map-all-off.png" alt="갈맷길 전체 코스" class="map-road-off">
+                <a href="#none"><img src="./images/index/map-on-01.png" alt="갈맷길 코스 1" class="map_road1"></a>
+                <a href="#none"><img src="./images/index/map-on-02.png" alt="갈맷길 코스 2" class="map_road2"></a>
+                <a href="#none"><img src="./images/index/map-on-05.png" alt="갈맷길 코스 5" class="map_road5"></a>
+                <a href="#none"><img src="./images/index/map-on-06.png" alt="갈맷길 코스 6" class="map_road6"></a>
+                <a href="#none"><img src="./images/index/map-on-07.png" alt="갈맷길 코스 7" class="map_road7"></a>
+                <a href="#none"><img src="./images/index/map-on-08.png" alt="갈맷길 코스 8" class="map_road8"></a>
+                <a href="#none"><img src="./images/index/map-on-09.png" alt="갈맷길 코스 9" class="map_road9"></a>
+                <a href="#none"><img src="./images/index/map-on-04.png" alt="갈맷길 코스 4" class="map_road4"></a>
+                <a href="#none"><img src="./images/index/map-on-03.png" alt="갈맷길 코스 3" class="map_road3"></a>
+            </div>
+            <div class="map_box road1">
+                <div class="box_title">
+                    <h4>부산의 바다를 만나는 길</h4>
+                    <h1>갈맷길 1코스</h1>
+                    <p class="title_route">
+                        <img src="./images/index/index_start.png" alt="출발">
+                        임랑해수욕장　〉
+                        <img src="./images/index/index_goal.png" alt="도착">
+                        송정해수욕장
+                    </p>
+                </div>
+                <div class="box_text">
+                    <p><span class="green">22.3km │ 7시간 소요 │ 난이도</span><img src="./images/index/star_on.png"
+                            alt="별"><img src="./images/index/star_on.png" alt="별"><img src="./images/index/star_off.png"
+                            alt="별"></p>
+                    <p>임랑해수욕장에서 송정해수욕장에 이르는 코스이다.<br>
+                        동해바다를 끼고 걷게 되는 코스인 만큼 바다 풍경이 가장<br>
+                        멋진 코스라고 할 수 있다.</p>
+                </div>
+                <a class="box_btn">
+                    <p>자세히 보기</p>
+                    <img src="./images/index/arrow-right.png" alt="화살표">
+                </a>
+            </div>
+            <div class="map_box road2">
+                <div class="box_title">
+                    <h4>부산의 바다를 만나는 길</h4>
+                    <h1>갈맷길 2코스</h1>
+                    <p class="title_route">
+                        <img src="./images/index/index_start.png" alt="출발">
+                        임랑해수욕장　〉
+                        <img src="./images/index/index_goal.png" alt="도착">
+                        송정해수욕장
+                    </p>
+                </div>
+                <div class="box_text">
+                    <p><span class="green">22.3km │ 7시간 소요 │ 난이도</span><img src="./images/index/star_on.png"
+                            alt="별"><img src="./images/index/star_on.png" alt="별"><img src="./images/index/star_off.png"
+                            alt="별"></p>
+                    <p>임랑해수욕장에서 송정해수욕장에 이르는 코스이다.<br>
+                        동해바다를 끼고 걷게 되는 코스인 만큼 바다 풍경이 가장<br>
+                        멋진 코스라고 할 수 있다.</p>
+                </div>
+                <a href="#none" class="box_btn">
+                    <p>자세히 보기</p>
+                    <img src="./images/index/arrow-right.png" alt="화살표">
+                </a>
+            </div>
+            <div class="map_box road3">
+                <div class="box_title">
+                    <h4>부산의 바다를 만나는 길</h4>
+                    <h1>갈맷길 3코스</h1>
+                    <p class="title_route">
+                        <img src="./images/index/index_start.png" alt="출발">
+                        임랑해수욕장　〉
+                        <img src="./images/index/index_goal.png" alt="도착">
+                        송정해수욕장
+                    </p>
+                </div>
+                <div class="box_text">
+                    <p><span class="green">22.3km │ 7시간 소요 │ 난이도</span><img src="./images/index/star_on.png"
+                            alt="별"><img src="./images/index/star_on.png" alt="별"><img src="./images/index/star_off.png"
+                            alt="별"></p>
+                    <p>임랑해수욕장에서 송정해수욕장에 이르는 코스이다.<br>
+                        동해바다를 끼고 걷게 되는 코스인 만큼 바다 풍경이 가장<br>
+                        멋진 코스라고 할 수 있다.</p>
+                </div>
+                <a href="#none" class="box_btn">
+                    <p>자세히 보기</p>
+                    <img src="./images/index/arrow-right.png" alt="화살표">
+                </a>
+            </div>
+            <div class="map_box road4">
+                <div class="box_title">
+                    <h4>부산의 바다를 만나는 길</h4>
+                    <h1>갈맷길 4코스</h1>
+                    <p class="title_route">
+                        <img src="./images/index/index_start.png" alt="출발">
+                        임랑해수욕장　〉
+                        <img src="./images/index/index_goal.png" alt="도착">
+                        송정해수욕장
+                    </p>
+                </div>
+                <div class="box_text">
+                    <p><span class="green">22.3km │ 7시간 소요 │ 난이도</span><img src="./images/index/star_on.png"
+                            alt="별"><img src="./images/index/star_on.png" alt="별"><img src="./images/index/star_off.png"
+                            alt="별"></p>
+                    <p>임랑해수욕장에서 송정해수욕장에 이르는 코스이다.<br>
+                        동해바다를 끼고 걷게 되는 코스인 만큼 바다 풍경이 가장<br>
+                        멋진 코스라고 할 수 있다.</p>
+                </div>
+                <a href="#none" class="box_btn">
+                    <p>자세히 보기</p>
+                    <img src="./images/index/arrow-right.png" alt="화살표">
+                </a>
+            </div>
+            <div class="map_box road5">
+                <div class="box_title">
+                    <h4>부산의 바다를 만나는 길</h4>
+                    <h1>갈맷길 5코스</h1>
+                    <p class="title_route">
+                        <img src="./images/index/index_start.png" alt="출발">
+                        임랑해수욕장　〉
+                        <img src="./images/index/index_goal.png" alt="도착">
+                        송정해수욕장
+                    </p>
+                </div>
+                <div class="box_text">
+                    <p><span class="green">22.3km │ 7시간 소요 │ 난이도</span><img src="./images/index/star_on.png"
+                            alt="별"><img src="./images/index/star_on.png" alt="별"><img src="./images/index/star_off.png"
+                            alt="별"></p>
+                    <p>임랑해수욕장에서 송정해수욕장에 이르는 코스이다.<br>
+                        동해바다를 끼고 걷게 되는 코스인 만큼 바다 풍경이 가장<br>
+                        멋진 코스라고 할 수 있다.</p>
+                </div>
+                <a href="#none" class="box_btn">
+                    <p>자세히 보기</p>
+                    <img src="./images/index/arrow-right.png" alt="화살표">
+                </a>
+            </div>
+            <div class="map_box road6">
+                <div class="box_title">
+                    <h4>부산의 바다를 만나는 길</h4>
+                    <h1>갈맷길 6코스</h1>
+                    <p class="title_route">
+                        <img src="./images/index/index_start.png" alt="출발">
+                        임랑해수욕장　〉
+                        <img src="./images/index/index_goal.png" alt="도착">
+                        송정해수욕장
+                    </p>
+                </div>
+                <div class="box_text">
+                    <p><span class="green">22.3km │ 7시간 소요 │ 난이도</span><img src="./images/index/star_on.png"
+                            alt="별"><img src="./images/index/star_on.png" alt="별"><img src="./images/index/star_off.png"
+                            alt="별"></p>
+                    <p>임랑해수욕장에서 송정해수욕장에 이르는 코스이다.<br>
+                        동해바다를 끼고 걷게 되는 코스인 만큼 바다 풍경이 가장<br>
+                        멋진 코스라고 할 수 있다.</p>
+                </div>
+                <a href="#none" class="box_btn">
+                    <p>자세히 보기</p>
+                    <img src="./images/index/arrow-right.png" alt="화살표">
+                </a>
+            </div>
+            <div class="map_box road7">
+                <div class="box_title">
+                    <h4>부산의 바다를 만나는 길</h4>
+                    <h1>갈맷길 7코스</h1>
+                    <p class="title_route">
+                        <img src="./images/index/index_start.png" alt="출발">
+                        임랑해수욕장　〉
+                        <img src="./images/index/index_goal.png" alt="도착">
+                        송정해수욕장
+                    </p>
+                </div>
+                <div class="box_text">
+                    <p><span class="green">22.3km │ 7시간 소요 │ 난이도</span><img src="./images/index/star_on.png"
+                            alt="별"><img src="./images/index/star_on.png" alt="별"><img src="./images/index/star_off.png"
+                            alt="별"></p>
+                    <p>임랑해수욕장에서 송정해수욕장에 이르는 코스이다.<br>
+                        동해바다를 끼고 걷게 되는 코스인 만큼 바다 풍경이 가장<br>
+                        멋진 코스라고 할 수 있다.</p>
+                </div>
+                <a href="#none" class="box_btn">
+                    <p>자세히 보기</p>
+                    <img src="./images/index/arrow-right.png" alt="화살표">
+                </a>
+            </div>
+            <div class="map_box road8">
+                <div class="box_title">
+                    <h4>부산의 바다를 만나는 길</h4>
+                    <h1>갈맷길 8코스</h1>
+                    <p class="title_route">
+                        <img src="./images/index/index_start.png" alt="출발">
+                        임랑해수욕장　〉
+                        <img src="./images/index/index_goal.png" alt="도착">
+                        송정해수욕장
+                    </p>
+                </div>
+                <div class="box_text">
+                    <p><span class="green">22.3km │ 7시간 소요 │ 난이도</span><img src="./images/index/star_on.png"
+                            alt="별"><img src="./images/index/star_on.png" alt="별"><img src="./images/index/star_off.png"
+                            alt="별"></p>
+                    <p>임랑해수욕장에서 송정해수욕장에 이르는 코스이다.<br>
+                        동해바다를 끼고 걷게 되는 코스인 만큼 바다 풍경이 가장<br>
+                        멋진 코스라고 할 수 있다.</p>
+                </div>
+                <a href="#none" class="box_btn">
+                    <p>자세히 보기</p>
+                    <img src="./images/index/arrow-right.png" alt="화살표">
+                </a>
+            </div>
+            <div class="map_box road9">
+                <div class="box_title">
+                    <h4>부산의 바다를 만나는 길</h4>
+                    <h1>갈맷길 9코스</h1>
+                    <p class="title_route">
+                        <img src="./images/index/index_start.png" alt="출발">
+                        임랑해수욕장　〉
+                        <img src="./images/index/index_goal.png" alt="도착">
+                        송정해수욕장
+                    </p>
+                </div>
+                <div class="box_text">
+                    <p><span class="green">22.3km │ 7시간 소요 │ 난이도</span><img src="./images/index/star_on.png"
+                            alt="별"><img src="./images/index/star_on.png" alt="별"><img src="./images/index/star_off.png"
+                            alt="별"></p>
+                    <p>임랑해수욕장에서 송정해수욕장에 이르는 코스이다.<br>
+                        동해바다를 끼고 걷게 되는 코스인 만큼 바다 풍경이 가장<br>
+                        멋진 코스라고 할 수 있다.</p>
+                </div>
+                <a href="#none" class="box_btn">
+                    <p>자세히 보기</p>
+                    <img src="./images/index/arrow-right.png" alt="화살표">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 추천 코스 -->
+    <div class="contents_course">
+        <div class="course_in">
+            <h1 data-aos="fade-down">모티 걷기 코스 추천</h1>
+            <a href="#" data-aos="fade-down">자세히 보기</a>
+            <ul class="tabnav" data-aos="fade-down">
+                <li><a href="#tab01">#바다</a></li>
+                <li><a href="#tab02">#숲</a></li>
+                <li><a href="#tab03">#도심</a></li>
+                <li><a href="#tab04">#야경</a></li>
+                <li><a href="#tab05">#힐링</a></li>
+                <li><a href="#tab06">#플로깅</a></li>
+                <li><a href="#tab07">#고난이도</a></li>
+            </ul>
+            <div class="tabcontent">
+                <div id="tab01">
+                    <div class="tab_main">
+                        <div class="main_in" data-aos="fade-right">
+                            <img src="./images/index/tab01-main.png" alt="갈맷길 9코스">
+                            <div class="tab_title">
+                                <h5>자연 그대로를 느끼며 걷는 길</h5>
+                                <h1>갈맷길 9코스</h1>
+                            </div>
+                            <div class="tab_text">
+                                <p class="title_route">
+                                    <img src="./images/index/index_start.png" alt="출발">
+                                    상현마을　〉
+                                    <img src="./images/index/index_goal.png" alt="도착">
+                                    기장군청<br>
+                                </p>
+                                <p class="white">22.3km │ 7시간 소요 │ 난이도 쉬움</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper mySwiper tab_slide" data-aos="fade-left">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide tab_in">
+                                <a href="#">
+                                    <h5>가볼만한 곳</h5>
+                                    <h2>회동수원지</h2>
+                                    <p>
+                                        회동동, 선동 등 5개동에<br>
+                                        인접한 도심 속 산중<br>
+                                        상수원지역
+                                    </p>
+                                    <div class="imgbox">
+                                        <img src="./images/index/tab01-sub1.png" alt="회동수원지">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide tab_in">
+                                <a href="#">
+                                    <div class="imgbox">
+                                        <img src="./images/index/tab01-sub2.png" alt="일광산">
+                                    </div>
+                                    <h5>가볼만한 곳</h5>
+                                    <h2>일광산</h2>
+                                    <p>
+                                        일광면 삼성리의 산<br>
+                                        숲속 산행의 즐거움을<br>
+                                        만끽할 수 있는 곳
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide tab_in">
+                                <a href="#">
+                                    <h5>가볼만한 곳</h5>
+                                    <h2>기장향교</h2>
+                                    <p>
+                                        조선 후기 기장읍<br>
+                                        교리에 지어진<br>
+                                        교육과 성현 봉사를 위한 기관
+                                    </p>
+                                    <div class="imgbox">
+                                        <img src="./images/index/tab01-sub3.png" alt="기장향교">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide tab_in">
+                                <a href="#">
+                                    <div class="imgbox">
+                                        <img src="./images/index/tab01-sub4.png" alt="상현마을">
+                                    </div>
+                                    <h5>가볼만한 곳</h5>
+                                    <h2>상현마을</h2>
+                                    <p>
+                                        금정구 선동,<br>
+                                        회동수원지의 인근 마을로<br>
+                                        산책로와 맛집으로 유명
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide tab_in">
+                                <a href="#">
+                                    <h5>가볼만한 곳</h5>
+                                    <h2>회동수원지</h2>
+                                    <p>
+                                        회동동, 선동 등 5개동에<br>
+                                        인접한 도심 속 산중<br>
+                                        상수원지역
+                                    </p>
+                                    <div class="imgbox">
+                                        <img src="./images/index/tab01-sub1.png" alt="회동수원지">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab02">
+                    <div class="tab_main">
+                        <div class="main_in" data-aos="fade-right">
+                            <img src="./images/index/tab01-main.png" alt="갈맷길 9코스">
+                            <div class="tab_title">
+                                <h5>자연 그대로를 느끼며 걷는 길</h5>
+                                <h1>갈맷길 9코스</h1>
+                            </div>
+                            <div class="tab_text">
+                                <p class="title_route">
+                                    <img src="./images/index/index_start.png" alt="출발">
+                                    상현마을　〉
+                                    <img src="./images/index/index_goal.png" alt="도착">
+                                    기장군청<br>
+                                </p>
+                                <p class="white">22.3km │ 7시간 소요 │ 난이도 쉬움</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper mySwiper tab_slide" data-aos="fade-left">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide tab_in">
+                                <a href="#">
+                                    <h5>가볼만한 곳</h5>
+                                    <h2>회동수원지</h2>
+                                    <p>
+                                        회동동, 선동 등 5개동에<br>
+                                        인접한 도심 속 산중<br>
+                                        상수원지역
+                                    </p>
+                                    <div class="imgbox">
+                                        <img src="./images/index/tab01-sub1.png" alt="회동수원지">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide tab_in">
+                                <a href="#">
+                                    <div class="imgbox">
+                                        <img src="./images/index/tab01-sub2.png" alt="일광산">
+                                    </div>
+                                    <h5>가볼만한 곳</h5>
+                                    <h2>일광산</h2>
+                                    <p>
+                                        일광면 삼성리의 산<br>
+                                        숲속 산행의 즐거움을<br>
+                                        만끽할 수 있는 곳
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide tab_in">
+                                <a href="#">
+                                    <h5>가볼만한 곳</h5>
+                                    <h2>기장향교</h2>
+                                    <p>
+                                        조선 후기 기장읍<br>
+                                        교리에 지어진<br>
+                                        교육과 성현 봉사를 위한 기관
+                                    </p>
+                                    <div class="imgbox">
+                                        <img src="./images/index/tab01-sub3.png" alt="기장향교">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide tab_in">
+                                <a href="#">
+                                    <div class="imgbox">
+                                        <img src="./images/index/tab01-sub4.png" alt="상현마을">
+                                    </div>
+                                    <h5>가볼만한 곳</h5>
+                                    <h2>상현마을</h2>
+                                    <p>
+                                        금정구 선동,<br>
+                                        회동수원지의 인근 마을로<br>
+                                        산책로와 맛집으로 유명
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide tab_in">
+                                <a href="#">
+                                    <h5>가볼만한 곳</h5>
+                                    <h2>회동수원지</h2>
+                                    <p>
+                                        회동동, 선동 등 5개동에<br>
+                                        인접한 도심 속 산중<br>
+                                        상수원지역
+                                    </p>
+                                    <div class="imgbox">
+                                        <img src="./images/index/tab01-sub1.png" alt="회동수원지">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab03">
+                    <div class="tab_main">
+                        <div class="main_in" data-aos="fade-right">
+                            <img src="./images/index/tab01-main.png" alt="갈맷길 9코스">
+                            <div class="tab_title">
+                                <h5>자연 그대로를 느끼며 걷는 길</h5>
+                                <h1>갈맷길 9코스</h1>
+                            </div>
+                            <div class="tab_text">
+                                <p class="title_route">
+                                    <img src="./images/index/index_start.png" alt="출발">
+                                    상현마을　〉
+                                    <img src="./images/index/index_goal.png" alt="도착">
+                                    기장군청<br>
+                                </p>
+                                <p class="white">22.3km │ 7시간 소요 │ 난이도 쉬움</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper mySwiper tab_slide" data-aos="fade-left">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide tab_in">
+                                <a href="#">
+                                    <h5>가볼만한 곳</h5>
+                                    <h2>회동수원지</h2>
+                                    <p>
+                                        회동동, 선동 등 5개동에<br>
+                                        인접한 도심 속 산중<br>
+                                        상수원지역
+                                    </p>
+                                    <div class="imgbox">
+                                        <img src="./images/index/tab01-sub1.png" alt="회동수원지">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide tab_in">
+                                <a href="#">
+                                    <div class="imgbox">
+                                        <img src="./images/index/tab01-sub2.png" alt="일광산">
+                                    </div>
+                                    <h5>가볼만한 곳</h5>
+                                    <h2>일광산</h2>
+                                    <p>
+                                        일광면 삼성리의 산<br>
+                                        숲속 산행의 즐거움을<br>
+                                        만끽할 수 있는 곳
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide tab_in">
+                                <a href="#">
+                                    <h5>가볼만한 곳</h5>
+                                    <h2>기장향교</h2>
+                                    <p>
+                                        조선 후기 기장읍<br>
+                                        교리에 지어진<br>
+                                        교육과 성현 봉사를 위한 기관
+                                    </p>
+                                    <div class="imgbox">
+                                        <img src="./images/index/tab01-sub3.png" alt="기장향교">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide tab_in">
+                                <a href="#">
+                                    <div class="imgbox">
+                                        <img src="./images/index/tab01-sub4.png" alt="상현마을">
+                                    </div>
+                                    <h5>가볼만한 곳</h5>
+                                    <h2>상현마을</h2>
+                                    <p>
+                                        금정구 선동,<br>
+                                        회동수원지의 인근 마을로<br>
+                                        산책로와 맛집으로 유명
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide tab_in">
+                                <a href="#">
+                                    <h5>가볼만한 곳</h5>
+                                    <h2>회동수원지</h2>
+                                    <p>
+                                        회동동, 선동 등 5개동에<br>
+                                        인접한 도심 속 산중<br>
+                                        상수원지역
+                                    </p>
+                                    <div class="imgbox">
+                                        <img src="./images/index/tab01-sub1.png" alt="회동수원지">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab04">
+                    <div class="tab_main">
+                        <div class="main_in" data-aos="fade-right">
+                            <img src="./images/index/tab01-main.png" alt="갈맷길 9코스">
+                            <div class="tab_title">
+                                <h5>자연 그대로를 느끼며 걷는 길</h5>
+                                <h1>갈맷길 9코스</h1>
+                            </div>
+                            <div class="tab_text">
+                                <p class="title_route">
+                                    <img src="./images/index/index_start.png" alt="출발">
+                                    상현마을　〉
+                                    <img src="./images/index/index_goal.png" alt="도착">
+                                    기장군청<br>
+                                </p>
+                                <p class="white">22.3km │ 7시간 소요 │ 난이도 쉬움</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper mySwiper tab_slide" data-aos="fade-left">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide tab_in">
+                                <a href="#">
+                                    <h5>가볼만한 곳</h5>
+                                    <h2>회동수원지</h2>
+                                    <p>
+                                        회동동, 선동 등 5개동에<br>
+                                        인접한 도심 속 산중<br>
+                                        상수원지역
+                                    </p>
+                                    <div class="imgbox">
+                                        <img src="./images/index/tab01-sub1.png" alt="회동수원지">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide tab_in">
+                                <a href="#">
+                                    <div class="imgbox">
+                                        <img src="./images/index/tab01-sub2.png" alt="일광산">
+                                    </div>
+                                    <h5>가볼만한 곳</h5>
+                                    <h2>일광산</h2>
+                                    <p>
+                                        일광면 삼성리의 산<br>
+                                        숲속 산행의 즐거움을<br>
+                                        만끽할 수 있는 곳
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide tab_in">
+                                <a href="#">
+                                    <h5>가볼만한 곳</h5>
+                                    <h2>기장향교</h2>
+                                    <p>
+                                        조선 후기 기장읍<br>
+                                        교리에 지어진<br>
+                                        교육과 성현 봉사를 위한 기관
+                                    </p>
+                                    <div class="imgbox">
+                                        <img src="./images/index/tab01-sub3.png" alt="기장향교">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide tab_in">
+                                <a href="#">
+                                    <div class="imgbox">
+                                        <img src="./images/index/tab01-sub4.png" alt="상현마을">
+                                    </div>
+                                    <h5>가볼만한 곳</h5>
+                                    <h2>상현마을</h2>
+                                    <p>
+                                        금정구 선동,<br>
+                                        회동수원지의 인근 마을로<br>
+                                        산책로와 맛집으로 유명
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide tab_in">
+                                <a href="#">
+                                    <h5>가볼만한 곳</h5>
+                                    <h2>회동수원지</h2>
+                                    <p>
+                                        회동동, 선동 등 5개동에<br>
+                                        인접한 도심 속 산중<br>
+                                        상수원지역
+                                    </p>
+                                    <div class="imgbox">
+                                        <img src="./images/index/tab01-sub1.png" alt="회동수원지">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab05">
+                    <div class="tab_main">
+                        <div class="main_in" data-aos="fade-right">
+                            <img src="./images/index/tab01-main.png" alt="갈맷길 9코스">
+                            <div class="tab_title">
+                                <h5>자연 그대로를 느끼며 걷는 길</h5>
+                                <h1>갈맷길 9코스</h1>
+                            </div>
+                            <div class="tab_text">
+                                <p class="title_route">
+                                    <img src="./images/index/index_start.png" alt="출발">
+                                    상현마을　〉
+                                    <img src="./images/index/index_goal.png" alt="도착">
+                                    기장군청<br>
+                                </p>
+                                <p class="white">22.3km │ 7시간 소요 │ 난이도 쉬움</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper mySwiper tab_slide" data-aos="fade-left">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide tab_in">
+                                <a href="#">
+                                    <h5>가볼만한 곳</h5>
+                                    <h2>회동수원지</h2>
+                                    <p>
+                                        회동동, 선동 등 5개동에<br>
+                                        인접한 도심 속 산중<br>
+                                        상수원지역
+                                    </p>
+                                    <div class="imgbox">
+                                        <img src="./images/index/tab01-sub1.png" alt="회동수원지">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide tab_in">
+                                <a href="#">
+                                    <div class="imgbox">
+                                        <img src="./images/index/tab01-sub2.png" alt="일광산">
+                                    </div>
+                                    <h5>가볼만한 곳</h5>
+                                    <h2>일광산</h2>
+                                    <p>
+                                        일광면 삼성리의 산<br>
+                                        숲속 산행의 즐거움을<br>
+                                        만끽할 수 있는 곳
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide tab_in">
+                                <a href="#">
+                                    <h5>가볼만한 곳</h5>
+                                    <h2>기장향교</h2>
+                                    <p>
+                                        조선 후기 기장읍<br>
+                                        교리에 지어진<br>
+                                        교육과 성현 봉사를 위한 기관
+                                    </p>
+                                    <div class="imgbox">
+                                        <img src="./images/index/tab01-sub3.png" alt="기장향교">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide tab_in">
+                                <a href="#">
+                                    <div class="imgbox">
+                                        <img src="./images/index/tab01-sub4.png" alt="상현마을">
+                                    </div>
+                                    <h5>가볼만한 곳</h5>
+                                    <h2>상현마을</h2>
+                                    <p>
+                                        금정구 선동,<br>
+                                        회동수원지의 인근 마을로<br>
+                                        산책로와 맛집으로 유명
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide tab_in">
+                                <a href="#">
+                                    <h5>가볼만한 곳</h5>
+                                    <h2>회동수원지</h2>
+                                    <p>
+                                        회동동, 선동 등 5개동에<br>
+                                        인접한 도심 속 산중<br>
+                                        상수원지역
+                                    </p>
+                                    <div class="imgbox">
+                                        <img src="./images/index/tab01-sub1.png" alt="회동수원지">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab06">
+                    <div class="tab_main">
+                        <div class="main_in" data-aos="fade-right">
+                            <img src="./images/index/tab01-main.png" alt="갈맷길 9코스">
+                            <div class="tab_title">
+                                <h5>자연 그대로를 느끼며 걷는 길</h5>
+                                <h1>갈맷길 9코스</h1>
+                            </div>
+                            <div class="tab_text">
+                                <p class="title_route">
+                                    <img src="./images/index/index_start.png" alt="출발">
+                                    상현마을　〉
+                                    <img src="./images/index/index_goal.png" alt="도착">
+                                    기장군청<br>
+                                </p>
+                                <p class="white">22.3km │ 7시간 소요 │ 난이도 쉬움</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper mySwiper tab_slide" data-aos="fade-left">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide tab_in">
+                                <a href="#">
+                                    <h5>가볼만한 곳</h5>
+                                    <h2>회동수원지</h2>
+                                    <p>
+                                        회동동, 선동 등 5개동에<br>
+                                        인접한 도심 속 산중<br>
+                                        상수원지역
+                                    </p>
+                                    <div class="imgbox">
+                                        <img src="./images/index/tab01-sub1.png" alt="회동수원지">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide tab_in">
+                                <a href="#">
+                                    <div class="imgbox">
+                                        <img src="./images/index/tab01-sub2.png" alt="일광산">
+                                    </div>
+                                    <h5>가볼만한 곳</h5>
+                                    <h2>일광산</h2>
+                                    <p>
+                                        일광면 삼성리의 산<br>
+                                        숲속 산행의 즐거움을<br>
+                                        만끽할 수 있는 곳
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide tab_in">
+                                <a href="#">
+                                    <h5>가볼만한 곳</h5>
+                                    <h2>기장향교</h2>
+                                    <p>
+                                        조선 후기 기장읍<br>
+                                        교리에 지어진<br>
+                                        교육과 성현 봉사를 위한 기관
+                                    </p>
+                                    <div class="imgbox">
+                                        <img src="./images/index/tab01-sub3.png" alt="기장향교">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide tab_in">
+                                <a href="#">
+                                    <div class="imgbox">
+                                        <img src="./images/index/tab01-sub4.png" alt="상현마을">
+                                    </div>
+                                    <h5>가볼만한 곳</h5>
+                                    <h2>상현마을</h2>
+                                    <p>
+                                        금정구 선동,<br>
+                                        회동수원지의 인근 마을로<br>
+                                        산책로와 맛집으로 유명
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide tab_in">
+                                <a href="#">
+                                    <h5>가볼만한 곳</h5>
+                                    <h2>회동수원지</h2>
+                                    <p>
+                                        회동동, 선동 등 5개동에<br>
+                                        인접한 도심 속 산중<br>
+                                        상수원지역
+                                    </p>
+                                    <div class="imgbox">
+                                        <img src="./images/index/tab01-sub1.png" alt="회동수원지">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab07">
+                    <div class="tab_main">
+                        <div class="main_in" data-aos="fade-right">
+                            <img src="./images/index/tab01-main.png" alt="갈맷길 9코스">
+                            <div class="tab_title">
+                                <h5>자연 그대로를 느끼며 걷는 길</h5>
+                                <h1>갈맷길 9코스</h1>
+                            </div>
+                            <div class="tab_text">
+                                <p class="title_route">
+                                    <img src="./images/index/index_start.png" alt="출발">
+                                    상현마을　〉
+                                    <img src="./images/index/index_goal.png" alt="도착">
+                                    기장군청<br>
+                                </p>
+                                <p class="white">22.3km │ 7시간 소요 │ 난이도 쉬움</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper mySwiper tab_slide" data-aos="fade-left">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide tab_in">
+                                <a href="#">
+                                    <h5>가볼만한 곳</h5>
+                                    <h2>회동수원지</h2>
+                                    <p>
+                                        회동동, 선동 등 5개동에<br>
+                                        인접한 도심 속 산중<br>
+                                        상수원지역
+                                    </p>
+                                    <div class="imgbox">
+                                        <img src="./images/index/tab01-sub1.png" alt="회동수원지">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide tab_in">
+                                <a href="#">
+                                    <div class="imgbox">
+                                        <img src="./images/index/tab01-sub2.png" alt="일광산">
+                                    </div>
+                                    <h5>가볼만한 곳</h5>
+                                    <h2>일광산</h2>
+                                    <p>
+                                        일광면 삼성리의 산<br>
+                                        숲속 산행의 즐거움을<br>
+                                        만끽할 수 있는 곳
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide tab_in">
+                                <a href="#">
+                                    <h5>가볼만한 곳</h5>
+                                    <h2>기장향교</h2>
+                                    <p>
+                                        조선 후기 기장읍<br>
+                                        교리에 지어진<br>
+                                        교육과 성현 봉사를 위한 기관
+                                    </p>
+                                    <div class="imgbox">
+                                        <img src="./images/index/tab01-sub3.png" alt="기장향교">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide tab_in">
+                                <a href="#">
+                                    <div class="imgbox">
+                                        <img src="./images/index/tab01-sub4.png" alt="상현마을">
+                                    </div>
+                                    <h5>가볼만한 곳</h5>
+                                    <h2>상현마을</h2>
+                                    <p>
+                                        금정구 선동,<br>
+                                        회동수원지의 인근 마을로<br>
+                                        산책로와 맛집으로 유명
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide tab_in">
+                                <a href="#">
+                                    <h5>가볼만한 곳</h5>
+                                    <h2>회동수원지</h2>
+                                    <p>
+                                        회동동, 선동 등 5개동에<br>
+                                        인접한 도심 속 산중<br>
+                                        상수원지역
+                                    </p>
+                                    <div class="imgbox">
+                                        <img src="./images/index/tab01-sub1.png" alt="회동수원지">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 중간 배너 -->
+    <div class="swiper mid-banner" data-aos="fade-right">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide mid-bn1">
+                <a href="#">
+                    <div class="bn_in">
+                        <h1>모티 여행을 위한 준비</h1>
+                        <p>모티부산 스탬프 투어 패스포트 & 모티부산 가이드북을<br>
+                            만나보세요</p>
+                        <h4>모티 스토어 바로가기</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide mid-bn2">
+                <a href="#">
+                    <div class="bn_in">
+                        <h1>모티 여행을 추억하며</h1>
+                        <p>모티 여행을 추억하는<br>
+                            다양한 굿즈들을 만나보세요</p>
+                        <h4>모티 스토어 바로가기</h4>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 갈맷길 명예의 전당 -->
+    <div class="contents_ranking">
+        <h2><span class="highlight">갈맷길 명예의 전당</span></h2>
+        <div class="ranking_in">
+            <div class="ranking_box">
+                <h4><img src="https://www.emoji.family/api/emojis/1f396/fluentflat/svg" alt="메달"></h4>
+                <h3>올해의 갈맷길 완보자</h3>
+                <h1><span class="animate1" data-rate="742"></span>명</h1>
+            </div>
+            <div class="ranking_box">
+                <h4><img src="https://www.emoji.family/api/emojis/1f3c6/fluentflat/svg" alt="메달"></h4>
+                <h3>전체 갈맷길 완보자</h3>
+                <h1><span class="animate2" data-rate="5739"></span>명</h1>
+            </div>
+        </div>
+        <h6>완보자들의 생생한 후기</h6>
+        <img src="./images/index/arrow-bottom.png" alt="아래 화살표" class="arrow_bottom">
+        <ul id="scroller" class="ranking_scroller">
+            <li>
+                <img src="./images/index/profile-1.png" alt="프로필 1">
+                <div class="scroller_in">
+                    <h5>김** / 부산시 북구</h5>
+                    <h5>5720번째 완보자</h5>
+                    <p>힘들었지만 보람찬 여행이었습니다</p>
+                </div>
+            </li>
+            <li>
+                <img src="./images/index/profile-2.png" alt="프로필 2">
+                <div class="scroller_in">
+                    <h5>박** / 서울시 도봉구</h5>
+                    <h5>5721번째 완보자</h5>
+                    <p>갈맷길 여행을 통해 저 자신을 새롭게 돌아보는 계기가 되었습니다. 추천합니다!</p>
+                </div>
+            </li>
+            <li>
+                <img src="./images/index/profile-3.png" alt="프로필 3">
+                <div class="scroller_in">
+                    <h5>김** / 부산시 사하구</h5>
+                    <h5>5722번째 완보자</h5>
+                    <p>부산에 대해 더 자세히 알게 되는 여행이었어요.<br>
+                        무엇보다 값진 경험을 했습니다.</p>
+                </div>
+            </li>
+            <li>
+                <img src="./images/index/profile-4.png" alt="프로필 4">
+                <div class="scroller_in">
+                    <h5>서** / 울산시</h5>
+                    <h5>5723번째 완보자</h5>
+                    <p>매력적인 도시, 부산!</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 모티 소식 -->
+    <div class="contents_notice">
+        <div class="notice_in">
+            <div class="notice_left" data-aos="fade-right">
+                <h6>NOTICE</h6>
+                <h2>모티 소식 <img src="./images/icon_notice.png" alt="아이콘" class="icon"></h2>
+                <p>모티부산의 현재 소식들을<br>
+                    가장 빠르게 알려드려요.</p>
+            </div>
+            <div class="notice_right">
+                <ul class="notice_nav" data-aos="fade-right">
+                    <li><a href="#notice1">공지사항</a></li>
+                    <li><a href="#notice2">이벤트</a></li>
+                    <li><a href="#notice3">프로그램</a></li>
+                </ul>
+                <div class="notice_tab" data-aos="fade-right">
+                    <div id="notice1">
+                        <a href="#">
+                            <h3>모티부산 앱과 함께 하는<br>
+                                걷기 챌린지!</h3>
+                            <p>
+                                모티부산 앱을 통해 구간 인증하고,<br>
+                                만 원 상당의 모바일 기프티콘도<br>
+                                받아가세요!<br>
+                                (기간 : 2024. 12. 31 ~ ...
+                            </p>
+                            <p class="gray">2024-12-06</p>
+                        </a>
+                        <a href="#">
+                            <h3>공사에 따른 갈맷길 8-2구간<br>
+                                일시 우회 변경사항 안내</h3>
+                            <p>
+                                갈맷길 8-2구간 일부구역에서<br>
+                                공사가 시행됨에 따라 위험구간에<br>
+                                대하여 한시적으로 ...
+                            </p>
+                            <p class="gray">2024-12-28</p>
+                        </a>
+                    </div>
+                    <div id="notice2"></div>
+                    <div id="notice3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 모티 갤러리 -->
+    <div class="contents_gallery">
+        <div class="gallery_in">
+            <div class="gallery_title" data-aos="fade-right">
+                <h6>GALLERY</h6>
+                <h2>모티 갤러리 <img src="./images/icon_gallery.png" alt="아이콘" class="icon"></h2>
+                <p>갈맷길을 걸으면서 만나는<br>
+                    모티의 풍경들을<br>
+                    둘러보세요.
+                </p>
+            </div>
+        </div>
+        <div class="gallery_scroller">
+            <ul id="scroller2">
+                <li><a href="#">
+                        <img src="./images/index/gallery1-1.png" alt="절영해안산책로">
+                        <div class="img_text">
+                            <h4>갈맷길 3-3 코스</h4>
+                            <h3>절영해안산책로</h3>
+                            <p>바로가기</p>
+                        </div>
+                    </a></li>
+                <li><a href="#">
+                        <img src="./images/index/gallery1-2.png" alt="광안리해수욕장">
+                        <div class="img_text">
+                            <h4>갈맷길 2-2 코스</h4>
+                            <h3>광안리해수욕장</h3>
+                            <p>바로가기</p>
+                        </div>
+                    </a></li>
+                <li><a href="#">
+                        <img src="./images/index/gallery1-3.png" alt="송정해수욕장">
+                        <div class="img_text">
+                            <h4>갈맷길 1-2 코스</h4>
+                            <h3>송정해수욕장</h3>
+                            <p>바로가기</p>
+                        </div>
+                    </a></li>
+            </ul>
+            <ul id="scroller3">
+                <li><a href="#">
+                        <img src="./images/index/gallery2-1.png" alt="누리마루">
+                        <div class="img_text">
+                            <h4>갈맷길 2-1 코스</h4>
+                            <h3>누리마루</h3>
+                            <p>바로가기</p>
+                        </div>
+                    </a></li>
+                <li><a href="#">
+                        <img src="./images/index/gallery2-2.png" alt="용두산공원">
+                        <div class="img_text">
+                            <h4>갈맷길 3-2 코스</h4>
+                            <h3>용두산공원</h3>
+                            <p>바로가기</p>
+                        </div>
+                    </a></li>
+                <li><a href="#">
+                        <img src="./images/index/gallery2-3.png" alt="범어사">
+                        <div class="img_text">
+                            <h4>갈맷길 7-2 코스</h4>
+                            <h3>범어사</h3>
+                            <p>바로가기</p>
+                        </div>
+                    </a></li>
+            </ul>
+            <ul id="scroller4">
+                <li><a href="#">
+                        <img src="./images/index/gallery3-1.png" alt="감천문화마을">
+                        <div class="img_text">
+                            <h4>갈맷길 4-1 코스</h4>
+                            <h3>감천문화마을</h3>
+                            <p>바로가기</p>
+                        </div>
+                    </a></li>
+                <li><a href="#">
+                        <img src="./images/index/gallery3-2.png" alt="다대포해수욕장">
+                        <div class="img_text">
+                            <h4>갈맷길 4-3 코스</h4>
+                            <h3>다대포해수욕장</h3>
+                            <p>바로가기</p>
+                        </div>
+                    </a></li>
+                <li><a href="#">
+                        <img src="./images/index/gallery3-3.png" alt="송도해수욕장">
+                        <div class="img_text">
+                            <h4>갈맷길 4-1 코스</h4>
+                            <h3>송도해수욕장</h3>
+                            <p>바로가기</p>
+                        </div>
+                    </a></li>
+            </ul>
+        </div>
+        <img src="./images/index/gallery_bg.png" alt="배경" class="gallery_bg">
+        <img src="./images/index/gallery-bgdeco1.png" alt="배경1" class="gallery-bgdeco1">
+        <img src="./images/index/gallery-bgdeco2.png" alt="배경2" class="gallery-bgdeco2">
+        <img src="./images/index/gallery-bgdeco2.png" alt="배경2" class="gallery-bgdeco3">
+    </div>
+
+    <!-- 푸터 -->
+    <div class="footer_top">
+        <div class="footer_top_in">
+            <a href="#"><img src="./images/logo-busan.png" alt="부산광역시"></a>
+            <a href="#"><img src="./images/logo-busan2.png" alt="부산관광공사"></a>
+            <a href="#"><img src="./images/logo-busan3.png" alt="부산관광브랜드"></a>
+        </div>
+    </div>
+    <div class="footer_bottom">
+        <div class="footer_bottom_in">
+            <div class="phone" data-aos="fade-right">
+                <h1>1588-2024</h1>
+                <p>문의전화<br>평일 09 : 00 - 18 : 00</p>
+            </div>
+            <ul data-aos="fade-down">
+                <li><a href="#">개인정보취급방침</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">사이트맵</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="./index.html"><img src="./images/logo-white.png" alt="모티부산 로고"></a></li>
+            </ul>
+            <p data-aos="fade-right" data-aos-offset="-10">
+                부산광역시 연제구 중앙대로 1001 부산광역시청 │ motics@moti.ko<br>
+                © Copyright by motibusan. ALL RIGHTS RESERVED.
+            </p>
+        </div>
+    </div>
+
+    <!-- JS library -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- counter JS -->
+    <script src="./script/jquery.animateNumber.min.js"></script>
+    <script src="./script/waypoints.min.js"></script>
+
+    <!-- Simply Scroll JS -->
+    <script src="./script/jquery.simplyscroll.js"></script>
+
+    <!-- AOS js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- my JS -->
+    <script src="./script/index.js"></script>
+</body>
+
+</html>
